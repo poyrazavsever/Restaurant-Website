@@ -15,7 +15,7 @@ function MobileNavbar() {
 
         <>
 
-            <section className="w-screen h-24 bg-transparent border-b border-secondary flex justify-end px-8 items-center">
+            <section className="w-screen h-20 bg-transparent border-b border-secondary flex justify-end px-8 items-center">
 
                 <button className='w-12 h-12' onClick={openMenuBtn}>
                     <BiMenuAltRight className='w-full h-full text-secondary' />
@@ -23,7 +23,7 @@ function MobileNavbar() {
 
             </section>
 
-            <img src="Images/Logo1.png" alt="mainLogo" className='absolute w-44 h-44 top-0' />
+            <img src="Images/Logo1.png" alt="mainLogo" className='absolute w-36 h-36 top-0' />
 
             <div className={`w-full h-screen absolute flex justify-center items-center top-0 text-center transition-all duration-300 backdrop-blur z-20 ${menuStyle === "hidden" ? "translate-x-full" : "translate-x-0"}`} >
 
@@ -59,7 +59,7 @@ function MobileNavbar() {
             </div>
 
 
-            <section className="w-screen h-24 bg-transparent">
+            <section className="w-screen h-12 bg-transparent">
             </section>
 
         </>

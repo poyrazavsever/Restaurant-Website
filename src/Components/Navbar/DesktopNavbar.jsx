@@ -4,7 +4,7 @@ function DesktopNavbar() {
     return (
         <>
 
-            <section className='w-screen h-24 bg-transparent border-b border-secondary flex justify-end gap-12 px-16 items-center'>
+            <section className='w-screen h-20 bg-transparent border-b border-secondary flex justify-end gap-12 px-16 items-center'>
 
 
                 <ul className='flex gap-8 text-sm'>
@@ -28,9 +28,9 @@ function DesktopNavbar() {
             </section>
 
 
-            <img src="Images/Logo1.png" alt="mainLogo" className='absolute w-44 h-44 top-0 left-6' />
+            <img src="Images/Logo1.png" alt="mainLogo" className='absolute w-36 h-36 top-0 left-6' />
 
-            <section className="w-screen h-24 bg-transparent"></section>
+            <section className="w-screen h-12 bg-transparent"></section>
 
         </>
     )

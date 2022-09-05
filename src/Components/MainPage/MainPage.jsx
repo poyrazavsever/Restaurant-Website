@@ -1,8 +1,9 @@
 import React from 'react'
+import Slider from './Slider'
 
 function MainPage() {
   return (
-    <div>MainPage</div>
+    <Slider />
   )
 }
 

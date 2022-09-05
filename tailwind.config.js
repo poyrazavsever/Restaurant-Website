@@ -12,7 +12,12 @@ module.exports = {
           200:"#383838",
           300:"#515151"
         },
-        secondary:"#8D2012",
+        secondary: {
+          DEFAULT : "#8D2012",
+          100:"#98362a",
+          200:"#a44d41",
+          300:"#af6359",
+        },
         tert:"#55150C",
         white:"#FEF7FF",
         text:"#0E0B11",
@@ -21,7 +26,7 @@ module.exports = {
       screens : {
         "mobile" : {"max" : "1023px", "min" : "0px"},
         "desktop" : {"min": "1024px"}
-      }
+      },
     },
   },
   plugins: [],
