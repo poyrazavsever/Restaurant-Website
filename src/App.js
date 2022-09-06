@@ -8,20 +8,21 @@ function App() {
 
 
   return (
-    <div className='bg-primary h-screen w-full text-white overflow-hidden relative'>
+      <div className='bg-primary h-screen w-full text-white overflow-hidden relative'>
 
+      <nav className='desktop:hidden z-20 fixed bg-primary'>
+        <MobileNavbar/>
+      </nav>
 
-        <nav className='desktop:hidden z-20 fixed bg-primary'>
-          <MobileNavbar/>
-        </nav>
+      <nav className='mobile:hidden z-20 fixed bg-primary'>
+        <DesktopNavbar />
+      </nav> 
 
-        <nav className='mobile:hidden z-20 fixed bg-primary'>
-          <DesktopNavbar />
-        </nav> 
+       
+      <br /><br /><br /><br /><br /><br /><br /><br />
 
-
-        <MainPage />
-
+      <MainPage />
+ 
 
     </div>
   );

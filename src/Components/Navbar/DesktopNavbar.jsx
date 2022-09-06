@@ -30,7 +30,6 @@ function DesktopNavbar() {
 
             <img src="Images/Logo1.png" alt="mainLogo" className='absolute w-36 h-36 top-0 left-6' />
 
-            <section className="w-screen h-12 bg-transparent"></section>
 
         </>
     )

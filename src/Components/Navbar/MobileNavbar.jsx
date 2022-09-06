@@ -17,7 +17,7 @@ function MobileNavbar() {
 
             <section className="w-screen h-20 bg-transparent border-b border-secondary flex justify-end px-8 items-center">
 
-                <button className='w-12 h-12' onClick={openMenuBtn}>
+                <button className='absolute top-11 m-3 bg-primary w-12 h-12' onClick={openMenuBtn}>
                     <BiMenuAltRight className='w-full h-full text-secondary' />
                 </button>
 
@@ -27,7 +27,7 @@ function MobileNavbar() {
 
             <div className={`w-full h-screen absolute flex justify-center items-center top-0 text-center transition-all duration-300 backdrop-blur z-20 ${menuStyle === "hidden" ? "translate-x-full" : "translate-x-0"}`} >
 
-                <button className='absolute top-7 right-7' onClick={openMenuBtn}>
+                <button className='absolute top-14 right-10' onClick={openMenuBtn}>
                     <AiOutlineClose className=' w-12 h-12 text-secondary' />
                 </button>
 
@@ -57,10 +57,6 @@ function MobileNavbar() {
                 </ul>
 
             </div>
-
-
-            <section className="w-screen h-12 bg-transparent">
-            </section>
 
         </>
 
