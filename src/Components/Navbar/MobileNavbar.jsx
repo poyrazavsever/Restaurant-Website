@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { BiMenuAltRight, BiRestaurant, BiImages } from "react-icons/bi"
-import { AiFillInfoCircle, AiOutlineClose } from "react-icons/ai"
+import { AiFillInfoCircle, AiOutlineClose, AiFillHome } from "react-icons/ai"
 import { FaHandMiddleFinger } from "react-icons/fa"
+import {NavLink} from "react-router-dom"
 
 function MobileNavbar() {
 
@@ -35,23 +36,28 @@ function MobileNavbar() {
                 <ul className="flex gap-12 flex-col text-left">
 
                     <li className='sm-nav-item'>
+                        <AiFillHome className="w-5 h-5" />
+                        <NavLink to="/">Home</NavLink>
+                    </li>
+
+                    <li className='sm-nav-item'>
                         <AiFillInfoCircle className="w-5 h-5" />
-                        <a href="#about">About Us</a>
+                        <NavLink to="/about">About</NavLink>
                     </li>
 
                     <li className='sm-nav-item'>
                         <BiRestaurant className="w-5 h-5" />
-                        <a href="#menu">Menu</a>
+                        <NavLink to="/menu">Menu</NavLink>
                     </li>
 
                     <li className='sm-nav-item'>
                         <FaHandMiddleFinger className="w-5 h-5" />
-                        <a href="#services">Services</a>
+                        <NavLink to="/#services">Services</NavLink>
                     </li>
 
                     <li className='sm-nav-item'>
                         <BiImages className="w-5 h-5 " />
-                        <a href="#gallery">Gallery</a>
+                        <NavLink to="/#gallery">Gallery</NavLink>
                     </li>
 
                 </ul>

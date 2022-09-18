@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from "react-router-dom"
 
 function DesktopNavbar() {
     return (
@@ -8,17 +9,21 @@ function DesktopNavbar() {
 
 
                 <ul className='flex gap-8 text-sm'>
+
                     <li>
-                        <a href="#about" className='lg-nav-item'>About Us</a>
+                        <NavLink to="/" className='lg-nav-item'>Home</NavLink>
                     </li>
                     <li>
-                        <a href="#menu" className='lg-nav-item'>Menu</a>
+                        <NavLink to="/about" className='lg-nav-item'>About</NavLink>
                     </li>
                     <li>
-                        <a href="#services" className='lg-nav-item'>Services</a>
+                        <NavLink to="/menu" className='lg-nav-item'>Menu</NavLink>
                     </li>
                     <li>
-                        <a href="#gallery" className='lg-nav-item'>Gallery</a>
+                        <NavLink to="/#services" className='lg-nav-item'>Services</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/#gallery" className='lg-nav-item'>Gallery</NavLink>
                     </li>
                 </ul>
 
