@@ -10,6 +10,7 @@ function App() {
   return (
       <div className='bg-primary h-screen w-full text-white overflow-x-hidden relative'>
 
+
           <nav className='desktop:hidden z-20 fixed bg-primary'>
             <MobileNavbar/>
           </nav>
@@ -18,6 +19,9 @@ function App() {
             <DesktopNavbar />
           </nav> 
 
+          
+
+          
 
           <Routes>
 
