@@ -27,7 +27,7 @@ function App() {
 
               {routes.map((route) => {
                 return(
-                  <Route key={route.name} path={route.path} element={<route.component/>} />
+                  <Route key={route.path} path={route.path} element={<route.component/>} />
                 )
 
               })}
