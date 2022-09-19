@@ -4,7 +4,7 @@ import { MainTitle } from "../MainTitle"
 function Healt() {
     return (
 
-        <div className='z-50 w-full flex flex-col justify-center items-start bg-primary-100 my-12 pb-6'>
+        <div className='z-50 w-full flex flex-col justify-center items-start bg-primary-100 my-12 pb-6 rounded'>
 
             <div className='w-3/4 mx-auto '>
                 <MainTitle top background> And <span>Healt</span> </MainTitle>

@@ -19,6 +19,19 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 8px; /*genislik 10px olsun*/
+	background-color: #060606; /*scrollbar arkaplan renk*/
+}
+::-webkit-scrollbar-thumb {
+	background-color: #3a3a3a; /*scrollbar renk*/
+	border-radius:15px /*oval olsun*/
+}
+::-webkit-scrollbar-thumb:hover { /*tiklandiginda*/
+	background-color: #7d7d7d;
 }
 
 @layer components{
@@ -32,5 +45,9 @@
 
     .menu-link{
         @apply transition-all duration-200 hover:text-red-300
+    }
+
+    .menu-card{
+        @apply flex flex-col sm:flex-row flex-wrap gap-6 mt-12 animate-wiggle justify-center items-center gap-12;
     }
 }

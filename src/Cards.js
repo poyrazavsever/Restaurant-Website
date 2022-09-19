@@ -39,6 +39,12 @@ export const galleryCard = [
     {
         link:"Images/galery6.jpg",
     },
+    {
+        link:"Images/galery3.jpg",
+    },
+    {
+        link:"Images/galery4.jpg",
+    },
 ]
 
 
