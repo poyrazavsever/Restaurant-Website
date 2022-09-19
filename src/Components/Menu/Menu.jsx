@@ -21,50 +21,51 @@ function Menu() {
           <button className='menu-link' onClick = {() => setMenuType("alcohol")}>Alcohol</button>
 
         </div>
+
+                  
+          <div className={`menu-card ${menuType === "mainCourse" ? "" : "hidden"}`}>
+
+    {mainCourse.map((card) => {
+      return (
+        <MenuCard key={card.link} imageLink={card.link} />
+      )
       
-        <div className={`flex flex-col gap-6 mt-12 animate-wiggle ${menuType === "mainCourse" ? "" : "hidden"}`}>
+    })}
 
-          {mainCourse.map((card) => {
-            return (
-              <MenuCard key={card.link} imageLink={card.link} />
-            )
-            
-          })}
+          </div>
 
-        </div>
+          <div className={`menu-card ${menuType === "sweet" ? "" : "hidden"}`}>
 
-        <div className={`flex flex-col gap-6 mt-12 animate-wiggle ${menuType === "sweet" ? "" : "hidden"}`}>
+            {sweet.map((card) => {
+              return (
+                <MenuCard key={card.link} imageLink={card.link} />
+              )
+              
+            })}
 
-          {sweet.map((card) => {
-            return (
-              <MenuCard key={card.link} imageLink={card.link} />
-            )
-            
-          })}
+          </div>
 
-        </div>
+          <div className={`menu-card ${menuType === "drink" ? "" : "hidden"}`}>
 
-        <div className={`flex flex-col gap-6 mt-12 animate-wiggle ${menuType === "drink" ? "" : "hidden"}`}>
+            {drink.map((card) => {
+              return (
+                <MenuCard key={card.link} imageLink={card.link} />
+              )
+              
+            })}
 
-          {drink.map((card) => {
-            return (
-              <MenuCard key={card.link} imageLink={card.link} />
-            )
-            
-          })}
+          </div>
 
-        </div>
+          <div className={`menu-card ${menuType === "alcohol" ? "" : "hidden"}`}>
 
-        <div className={`flex flex-col gap-6 mt-12 animate-wiggle ${menuType === "alcohol" ? "" : "hidden"}`}>
+            {alcohol.map((card) => {
+              return (
+                <MenuCard key={card.link} imageLink={card.link} />
+              )
+              
+            })}
 
-          {alcohol.map((card) => {
-            return (
-              <MenuCard key={card.link} imageLink={card.link} />
-            )
-            
-          })}
-
-        </div>
+          </div>
 
     </div>
 

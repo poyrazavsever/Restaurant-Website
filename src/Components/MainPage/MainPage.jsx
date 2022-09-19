@@ -7,33 +7,32 @@ import Gallery from './Gallery';
 
 function MainPage() {
   return (
-    <div className='w-full'>
+    <div>
 
-      <img src="Images/bg-1.jpg" alt="MainPageBg" className='w-full h-48 opacity-50' />
+      <img src="Images/bg-1.jpg" alt="MainPageBg" className='w-full h-48 sm:h-64 md:h-72 lg:h-80 opacity-50' />
 
-      <div className='z-50 w-3/4 mx-auto flex flex-col justify-center items-start'>
+      <div className='max-w-5xl mx-auto'>
 
-        <MainTitle top background>Pavori <span>Meat</span></MainTitle>
+        <div className='z-50 w-3/4 mx-auto flex flex-col justify-center items-start'>
 
-        <p className='text-sm tracking-wider'>Cafe & Bar, which has not lost its popularity since 2020, serves you in its 2-storey venue in the center of Beylikdüzü. We are waiting for you to enjoy music and entertainment in a peaceful, comfortable and safe environment.
-        You can spend nice hours with the view of the city at Cafe & Bar, the most popular place of the region. We have daytime activity areas for your events. We are here with the unique tastes of world and Mediterranean cuisine.</p>
+          <MainTitle top background>Pavori <span>Meat</span></MainTitle>
 
-        <img src="Images/meat2.png" alt="meat1" className='pt-12 w-96' />
+          <p className='text-sm tracking-wider'>Cafe & Bar, which has not lost its popularity since 2020, serves you in its 2-storey venue in the center of Beylikdüzü. We are waiting for you to enjoy music and entertainment in a peaceful, comfortable and safe environment.
+          You can spend nice hours with the view of the city at Cafe & Bar, the most popular place of the region. We have daytime activity areas for your events. We are here with the unique tastes of world and Mediterranean cuisine.</p>
+
+          <img src="Images/meat2.png" alt="meat1" className='pt-12 w-96' />
+
+        </div>
+
+        <Healt />
+
+        <OurServices />
+
+        <Gallery />
 
       </div>
 
-      <Healt />
-
-      <OurServices />
-
-      <Gallery />
-
-
-
       <p className='w-full text-center block text-sm pb-6 text-zinc-300'>2022 © All rights reserved by Pavori Meat</p>
-
-
-      
 
     </div>
   )

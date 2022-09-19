@@ -8,31 +8,31 @@ import "./index.css"
 function App() {
 
   return (
-      <div className='bg-primary h-screen w-full text-white overflow-x-hidden relative'>
+      <div className='bg-primary h-screen text-white overflow-x-hidden relative'>
 
+            <nav className='desktop:hidden z-20 fixed bg-primary'>
+              <MobileNavbar/>
+            </nav>
 
-          <nav className='desktop:hidden z-20 fixed bg-primary'>
-            <MobileNavbar/>
-          </nav>
+            <nav className='mobile:hidden z-20 fixed bg-primary'>
+              <DesktopNavbar />
+            </nav> 
 
-          <nav className='mobile:hidden z-20 fixed bg-primary'>
-            <DesktopNavbar />
-          </nav> 
+            
+        <div className='mx-auto'>
 
-          
+            <Routes>
 
-          
+                {routes.map((route) => {
+                  return(
+                    <Route key={route.path} path={route.path} element={<route.component/>} />
+                  )
 
-          <Routes>
+                })}
 
-              {routes.map((route) => {
-                return(
-                  <Route key={route.path} path={route.path} element={<route.component/>} />
-                )
+            </Routes>
 
-              })}
-
-          </Routes>
+        </div>
 
       </div>
   );
