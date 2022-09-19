@@ -29,4 +29,8 @@
     .lg-nav-item{
         @apply hover:text-red-500 hover:border-b hover:border-red-500 pb-1 transition-all duration-300;
     }
+
+    .menu-link{
+        @apply transition-all duration-200 hover:text-red-300
+    }
 }
