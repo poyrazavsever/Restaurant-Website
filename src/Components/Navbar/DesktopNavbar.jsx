@@ -20,10 +20,10 @@ function DesktopNavbar() {
                         <NavLink to="/menu" className='lg-nav-item'>Menu</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/#services" className='lg-nav-item'>Services</NavLink>
+                        <a href="/#services" className='lg-nav-item'>Services</a>
                     </li>
                     <li>
-                        <NavLink to="/#gallery" className='lg-nav-item'>Gallery</NavLink>
+                        <a href="/#gallery" className='lg-nav-item'>Gallery</a>
                     </li>
                 </ul>
 

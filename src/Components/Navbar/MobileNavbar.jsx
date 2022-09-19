@@ -35,29 +35,29 @@ function MobileNavbar() {
 
                 <ul className="flex gap-12 flex-col text-left">
 
-                    <li className='sm-nav-item'>
+                    <li className='sm-nav-item' onClick={openMenuBtn}>
                         <AiFillHome className="w-5 h-5" />
                         <NavLink to="/">Home</NavLink>
                     </li>
 
-                    <li className='sm-nav-item'>
+                    <li className='sm-nav-item' onClick={openMenuBtn}>
                         <AiFillInfoCircle className="w-5 h-5" />
                         <NavLink to="/about">About</NavLink>
                     </li>
 
-                    <li className='sm-nav-item'>
+                    <li className='sm-nav-item' onClick={openMenuBtn}>
                         <BiRestaurant className="w-5 h-5" />
                         <NavLink to="/menu">Menu</NavLink>
                     </li>
 
-                    <li className='sm-nav-item'>
+                    <li className='sm-nav-item' onClick={openMenuBtn}>
                         <FaHandMiddleFinger className="w-5 h-5" />
-                        <NavLink to="/#services">Services</NavLink>
+                        <a href="/#services">Services</a>
                     </li>
 
-                    <li className='sm-nav-item'>
+                    <li className='sm-nav-item' onClick={openMenuBtn}>
                         <BiImages className="w-5 h-5 " />
-                        <NavLink to="/#gallery">Gallery</NavLink>
+                        <a href="/#gallery">Gallery</a>
                     </li>
 
                 </ul>
