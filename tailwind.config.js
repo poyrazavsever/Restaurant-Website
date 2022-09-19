@@ -23,6 +23,17 @@ module.exports = {
         text:"#0E0B11",
       },
 
+      keyframes : {
+        wiggle: {
+          '0%' : {opacity:0},
+          '100%': { opacity:1 }
+        }
+      },
+
+      animation: {
+        wiggle : 'wiggle .5s ease-in forwards'
+      },
+
       screens : {
         "mobile" : {"max" : "1023px", "min" : "0px"},
         "desktop" : {"min": "1024px"}
