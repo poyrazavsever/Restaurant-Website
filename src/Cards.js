@@ -40,3 +40,65 @@ export const galleryCard = [
         link:"Images/galery6.jpg",
     },
 ]
+
+
+
+export const mainCourse = [
+    {
+        link:"Images/meat1.png",
+    },
+    {
+        link:"Images/meat2.png",
+    },
+    {
+        link:"Images/meat3.png",
+    },
+    {
+        link:"Images/meat4.png",
+    },
+]
+
+export const sweet = [
+    {
+        link:"Images/meat2.png",
+    },
+    {
+        link:"Images/meat4.png",
+    },
+    {
+        link:"Images/meat1.png",
+    },
+    {
+        link:"Images/meat3.png",
+    },
+]
+
+export const drink = [
+    {
+        link:"Images/meat4.png",
+    },
+    {
+        link:"Images/meat3.png",
+    },
+    {
+        link:"Images/meat2.png",
+    },
+    {
+        link:"Images/meat1.png",
+    },
+]
+
+export const alcohol = [
+    {
+        link:"Images/meat3.png",
+    },
+    {
+        link:"Images/meat4.png",
+    },
+    {
+        link:"Images/meat1.png",
+    },
+    {
+        link:"Images/meat2.png",
+    },
+]
