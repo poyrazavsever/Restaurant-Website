@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { BiMenuAltRight, BiRestaurant, BiImages } from "react-icons/bi"
-import { AiFillInfoCircle, AiOutlineClose, AiFillHome } from "react-icons/ai"
-import { FaHandMiddleFinger } from "react-icons/fa"
+import { AiFillInfoCircle, AiOutlineClose, AiFillHome, AiOutlinePaperClip } from "react-icons/ai"
 import {NavLink} from "react-router-dom"
 
 function MobileNavbar() {
@@ -51,7 +50,7 @@ function MobileNavbar() {
                     </li>
 
                     <li className='sm-nav-item' onClick={openMenuBtn}>
-                        <FaHandMiddleFinger className="w-5 h-5" />
+                        <AiOutlinePaperClip className="w-5 h-5 " />
                         <a href="/#services">Services</a>
                     </li>
 
