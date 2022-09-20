@@ -27,7 +27,7 @@ function Menu() {
 
     {mainCourse.map((card) => {
       return (
-        <MenuCard key={card.link} imageLink={card.link} />
+        <MenuCard key={card.name} imageLink={card.link} name={card.name} desc={card.desc} fee={card.fee}/>
       )
       
     })}
@@ -38,7 +38,7 @@ function Menu() {
 
             {sweet.map((card) => {
               return (
-                <MenuCard key={card.link} imageLink={card.link} />
+                <MenuCard key={card.name} imageLink={card.link} name={card.name} desc={card.desc} fee={card.fee}/>
               )
               
             })}
@@ -49,7 +49,7 @@ function Menu() {
 
             {drink.map((card) => {
               return (
-                <MenuCard key={card.link} imageLink={card.link} />
+                <MenuCard key={card.name} imageLink={card.link} name={card.name} desc={card.desc} fee={card.fee}/>
               )
               
             })}
@@ -60,7 +60,7 @@ function Menu() {
 
             {alcohol.map((card) => {
               return (
-                <MenuCard key={card.link} imageLink={card.link} />
+                <MenuCard key={card.name} imageLink={card.link} name={card.name} desc={card.desc} fee={card.fee}/>
               )
               
             })}
